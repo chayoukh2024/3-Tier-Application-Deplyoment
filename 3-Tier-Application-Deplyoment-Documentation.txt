@@ -44,4 +44,36 @@ edit the file as per the images
 
 Fourth: Deploy it
 Setup Jenkins/SonarQube
+Configure tools on Jenkins tools section 
+Install trivy on Jenkins 
+
+Genrate SonarQube token -> add this to credential of Jenkins
+
+For trivy fs step we first need to generate a file then do the need full,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+READ ME:
 

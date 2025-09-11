@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('docker-access-token')
-        SCANNER_HOME = tool 'sonar-scanner'
+        SCANNER_HOME= tool 'sonar-scanner'
     }
     tools {
         nodejs "node22"
@@ -13,7 +13,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 echo "Cloning the repository from GitHub"
-                git url: 'https://github.com/Karan-Negi-12/3-Tier-Application-Deplyoment.git' branch: 'master'
+                git url: 'https://github.com/Karan-Negi-12/3-Tier-Application-Deplyoment.git', branch: 'master'
             }
         }
 
@@ -52,7 +52,9 @@ pipeline {
         stage('SonarQube Scan') {
             steps {
                 echo 'Running SonarQube Scan....'
-                sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectKey=3-Tier-Application-Deplyoment -Dsonar.projectName=3-Tier-Application-Deplyoment -Dsonar.host.url=http://http://20.44.56.196:9000/" 
+                withSonarQubeEnv('sonar'){
+                    sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectKey=3-Tier-Application-Deplyoment -Dsonar.projectName=3-Tier-Application-Deplyoment" 
+                }
             }
         }
         stage('Docker Image Build') {
@@ -76,9 +78,9 @@ pipeline {
         stage('Docker Image test') {
             steps{
                 script {
-                    sh "docker run -d -p 8080:80 --name test-container devopskarannegi/3-tier-application:${env.IMAGE_TAG}"
-                    sleep 20
-                    sh "curl -f http://localhost:8080 || exit 1"
+                    sh "docker run -d -p 3000:80 --name test-container devopskarannegi/3-tier-application:${env.IMAGE_TAG}"
+                    sh 'sleep 10'
+                    sh "curl -f http://localhost:80 || exit 1"
                 }
             }
         }
@@ -92,6 +94,19 @@ pipeline {
                     sh 'docker logout'
                 }
             }
+        }
+    }
+    post {
+        always {
+            echo 'Cleaning up the workspace...'
+            sh 'docker rm -f test-container || true'
+            
+        }
+        success {
+            echo 'The pipeline has completed successfully!'
+        }
+        failure {
+            echo 'The pipeline has failed. Please check the logs for details.'
         }
     }
 }

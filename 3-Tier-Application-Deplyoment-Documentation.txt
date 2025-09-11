@@ -1,2 +1,47 @@
 3-Tier-Application-Deplyoment
 
+First:- Let's deploy and test our application locally/on other server.
+
+- Build another Server for deployment.
+
+- Now build a account in Cloudinary
+{Cloudinary is a cloud-based media management platform mainly used by developers and businesses to handle images, videos, and other media files.}
+https://console.cloudinary.com/app/c-ac3c84e29858ff6744bd5aaa621dfb/home/dashboard
+
+- Now Build a account in Mapbox
+{Mapbox 👉 It’s a cloud-based service that provides APIs and SDKs for adding interactive maps, geolocation, navigation, and location-based data visualizations in web and mobile applications. Developers use it as an alternative to Google Maps.}
+https://console.mapbox.com/account 
+
+- Now Build Database -- Cloud Based
+{We can use both Cloud based or container DB}
+  - Build a account in mongo atlas
+    {MongoDB Atlas is the cloud version of MongoDB, offered as a Database-as-a-Service (DBaaS).}
+    Make accessable the whole DB 
+    https://cloud.mongodb.com/v2/68c29138193ae36a2d4b05b8#/security/network/accessList
+
+Second: Setting up enviroment
+What to write in a .env file
+# Cloudinary credentials for image and video management
+CLOUDINARY_CLOUD_NAME=dttx62muu
+CLOUDINARY_KEY=582533422215331
+CLOUDINARY_SECRET=AGUKXi3793alvxvrhcAnZbZv6Cs
+
+# Mapbox token for location-based services
+MAPBOX_TOKEN=sk.eyJ1Ijoia2FyYW4tbmVnaS0xMiIsImEiOiJjbWZmNmg2ODAwZGFxMmtyOXlzczNhYmRmIn0.px2xckSNADpFA4hIsgHSNA
+
+# Database connection string
+DB_URL="mongodb+srv://karan:Kafka@#PDM2212@k-cloud-mongo-db.bxy9730.mongodb.net/?retryWrites=true&w=majority&appName=K-Cloud-Mongo-DB"
+# Secret key for application security
+SECRET=karannegi
+
+
+Third: Deploy Local
+git clone ..
+npm start 
+
+edit the file as per the images
+
+
+Fourth: Deploy it
+Setup Jenkins/SonarQube
+

@@ -1,1 +1,32 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# Logs
+*.log
+logs/
+
+# Build output
+dist/
+build/
+
+# Environment files
 .env
+*.env
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Ansible
+*.retry
+
+# Kubernetes
+*.yaml~
+.kube/
+
+# IDE files
+.vscode/
+.idea/
+*.swp

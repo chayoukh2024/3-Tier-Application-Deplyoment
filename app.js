@@ -21,13 +21,11 @@ const reviewRoutes = require('./routes/reviews');
 
 const MongoDBStore = require("connect-mongo")(session);
 
-const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/yelp-camp';
+const dbUrl = process.env.DB_URL || "mongodb+srv://karan:Kafka%40%23PDM2212@k-cloud-mongo-db.bxy9730.mongodb.net/?retryWrites=true&w=majority&appName=K-Cloud-Mongo-DB";
 
-mongoose.connect(dbUrl, {
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
 });
 
 const db = mongoose.connection;

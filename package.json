@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"There are no test-cases\" && exit 0",
     "start": "node app.js",
-    "build": "echo \"Nothing to build for now" && exit 0"
+    "build": "echo \"Nothing to build for now" && exit 0",
     "test": "echo \"Nothing for test nothing Altho Using SonarQube for the test\" && exit 0"
   },
   "keywords": [],

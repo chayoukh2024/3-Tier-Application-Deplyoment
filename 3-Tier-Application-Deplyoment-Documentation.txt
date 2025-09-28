@@ -51,6 +51,7 @@ Genrate SonarQube token -> add this to credential of Jenkins
 
 For trivy fs step we first need to generate a file then do the need full,
 
+access the container from local laptop
 
 
 
@@ -63,7 +64,12 @@ For trivy fs step we first need to generate a file then do the need full,
 
 
 
+for kbernetes:
 
+in master we need to create a service account and then we create a role then assign that service account to the role via bind. then creta a token/secret
+
+
+service account -> role -> 
 
 
 

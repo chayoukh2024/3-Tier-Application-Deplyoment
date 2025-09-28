@@ -17,7 +17,6 @@ build/
 # Terraform
 *.tfstate
 *.tfstate.backup
-.terraform/
 
 # Ansible
 *.retry

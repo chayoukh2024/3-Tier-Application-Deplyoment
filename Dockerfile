@@ -1,20 +1,20 @@
-# Use Node 18 as parent image
-FROM node:18
+FROM node:18-alpine
 
-# Change the working directory on the Docker image to /app
-WORKDIR /app
+LABEL BaseImage="Node.js 18 Alpine"
+LABEL org.opencontainers.image.title="Giveaway Website"               
+LABEL org.opencontainers.image.description="Node.js application container for Giveaway Website"  
+LABEL org.opencontainers.image.version="1.0"                           
+LABEL org.opencontainers.image.authors="Karan Negi <knegi2003@gmail.com>"   
+LABEL org.opencontainers.image.source="https://github.com/Karan-Negi-12/3-Tier-Application-Deplyoment.git"                          
+LABEL org.opencontainers.image.created="2025-11-09"
 
-# Copy package.json and package-lock.json to the /app directory
+WORKDIR /FindCamp
+
 COPY package.json package-lock.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of project files into this image
 COPY . .
 
-# Expose application port
 EXPOSE 3000
-
-# Start the application
-CMD npm start
+CMD ["npm", "start"]

